@@ -6,9 +6,91 @@
         <title>Document</title>
         <link rel="stylesheet" href="./css/main.css" />
     </head>
-    <body>
-        <h1>TEST</h1>
-        <h3>TESTER</h3>
+
+    <body class="grid grid-rows-[auto_1fr_auto] min-h-screen">
+        <header id="Header">
+            <div class="logo-wrapper flex items-center justify-center py-10.5">
+                <a href="#!">
+                    <img src="./assets/images/icons/logo.svg" alt="Logo icon" />
+                </a>
+            </div>
+            <div class="wrapper border-y-1 border-y-[#DDDDDD]">
+                <menu class="grid grid-cols-[1fr_auto_auto] gap-x-30 py-15 items-center">
+                    <a href="#!">
+                        <img src="./assets/images/icons/hamburger_menu.svg" alt="" />
+                    </a>
+                    <a href="#!">
+                        <img src="./assets/images/icons/search.svg" alt="" />
+                    </a>
+                    <a href="#!">
+                        <img src="./assets/images/icons/login.svg" alt="" />
+                    </a>
+                </menu>
+            </div>
+        </header>
+
+        <div id="Page-Content">
+            <section id="Hero">
+                <div class="wrapper flex flex-col py-49 gap-y-21">
+                    <div class="hero-main-text flex flex-col gap-y-15">
+                        <h1 class="text-[#4C5866] text-3xl leading-none tracking-normal font-[Roboto] max-w-220">Простые вещи. Из бумаги</h1>
+                        <p class="text-[#85859B] text-sm/[150%] tracking-normal font-[Roboto]">
+                            Бума́га (предположительно от итал. bombagia, первоисточником же считается иранский) — волокнистый материал с минеральными добавками.
+                        </p>
+                    </div>
+                    <a
+                        class="block max-w-min px-38 py-14.5 border-1 border-[#7875FE] text-[#7875FE] text-lg font-[Roboto] tracking-normal leading-none"
+                        href="#!"
+                    >
+                        Каталог
+                    </a>
+                </div>
+            </section>
+            <section id="Study-Result" class="bg-[#ebebeb]">
+                <div class="wrapper py-60 flex flex-col justify-between items-center">
+                    <div class="instruction">
+                        <div class="grid grid-cols-2 gap-x-30 border-t-1 border-t-[#C0C0C0] py-20">
+                            <img class="row-span-full col-1" src="./assets/images/paper_v1.png" alt="Paper V1" />
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="font-[Roboto] text-[#666666] text-base/[150%] tracking-normal font-medium">V.1</h3>
+                                <p class="font-[Roboto] text-[#85859B] text-base/[150%] tracking-normal">Результат вашего обучения</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-x-30 border-t-1 border-t-[#C0C0C0] py-20">
+                            <img class="row-span-full col-1" src="./assets/images/paper_v2.png" alt="Paper V2" />
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="font-[Roboto] text-[#666666] text-base/[150%] tracking-normal font-medium">V.2</h3>
+                                <p class="font-[Roboto] text-[#85859B] text-base/[150%] tracking-normal">Результат вашего обучения</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-x-30 border-t-1 border-t-[#C0C0C0] py-20">
+                            <img class="row-span-full col-1" src="./assets/images/paper_v3.png" alt="Paper V3" />
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="font-[Roboto] text-[#666666] text-base/[150%] tracking-normal font-medium">V.3</h3>
+                                <p class="font-[Roboto] text-[#85859B] text-base/[150%] tracking-normal">Результат вашего обучения</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="block pt-60 pb-20" src="./assets/images/paper_big.png" alt="Paper Big" />
+                    <div class="content flex flex-col gap-y-14">
+                        <h2 class="section-header text-2xl/none text-[#666666] tracking-normal font-[Roboto]">Максимальная белизна</h2>
+                        <p class="text-base/[170%] text-[#85859B] tracking-normal font-[Roboto]">
+                            Для повышения белизны, гладкости и мягкости в состав бумажной массы вводят белые минеральные вещества: мел, тальк, каолин и др. Эта
+                            операция называется наполнением.
+                        </p>
+                        <p class="text-base/[170%] text-[#85859B] tracking-normal font-[Roboto]">
+                            Отлив бумажного листа осуществляют на бумагоделательной машине, важнейшей частью которой является непрерывно движущаяся (как
+                            транспортер) металлическая или капроновая сетка.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer id="Footer" class="bg-amber-100">
+            <div class="wrapper"> Footer </div>
+        </footer>
+
         <script src="./js/main.js"></script>
     </body>
 </html>
