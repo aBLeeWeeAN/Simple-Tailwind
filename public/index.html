@@ -2,21 +2,24 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
 
         <title>Document</title>
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
         <link rel="stylesheet" href="./css/main.css" />
     </head>
 
     <body class="grid grid-rows-[auto_1fr_auto] min-h-screen">
         <header id="Header">
-            <div class="logo-wrapper flex items-center justify-center py-10.5">
+            <section id="Logo" class="logo-wrapper flex items-center justify-center py-10.5">
                 <a href="#!">
-                    <img src="./assets/images/icons/logo.svg" alt="Logo icon" />
+                    <img src="./assets/images/icons/logo_dark.svg" alt="Logo dark icon" />
                 </a>
-            </div>
-            <div class="wrapper border-y border-y-[#DDDDDD]">
+            </section>
+            <section id="Menu" class="wrapper border-y border-y-[#DDDDDD]">
                 <menu class="grid grid-cols-[1fr_auto_auto] gap-x-30 py-15 items-center">
                     <a href="#!">
                         <img src="./assets/images/icons/hamburger_menu.svg" alt="" />
@@ -28,7 +31,7 @@
                         <img src="./assets/images/icons/login.svg" alt="" />
                     </a>
                 </menu>
-            </div>
+            </section>
         </header>
 
         <div id="Page-Content">
@@ -155,12 +158,94 @@
                     </div>
                 </div>
             </section>
+            <section id="Partners" class="bg-[#ebebeb]">
+                <div class="wrapper py-60">
+                    <!-- <div class="max-w-xs flex flex-nowrap gap-x-30">
+                        <div class="w-150 h-80 shrink-0 flex items-center justify-center border border-[#C4C4C4]">
+                            <img src="./assets/images/icons/hahnemuehle.svg" alt="Hahnemuehle logo" class="w-[76.67%]" />
+                        </div>
+                        <div class="w-150 h-80 shrink-0 flex items-center justify-center border border-[#C4C4C4]">
+                            <img src="./assets/images/icons/canson.svg" alt="Canson logo" class="w-[76.67%]" />
+                        </div>
+                        <div class="w-150 h-80 shrink-0 flex items-center justify-center border border-[#C4C4C4]">
+                            <img src="./assets/images/icons/royal_talens.svg" alt="Royal Talents logo" class="w-[76.67%]" />
+                        </div>
+                        <div class="w-150 h-80 shrink-0 flex items-center justify-center border border-[#C4C4C4]">
+                            <img src="./assets/images/icons/fabriano.svg" alt="Fabriano logo" class="w-[76.67%]" />
+                        </div>
+                    </div> -->
+                    <div class="swiper mySwiper min-w-0 max-w-360 h-80">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="flex justify-center items-center w-full h-full border border-[#C4C4C4]">
+                                    <img src="./assets/images/icons/hahnemuehle.svg" alt="Hahnemuehle logo" class="w-[76.67%]" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex justify-center items-center w-full h-full border border-[#C4C4C4]">
+                                    <img src="./assets/images/icons/canson.svg" alt="Canson logo" class="w-[76.67%]" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex justify-center items-center w-full h-full border border-[#C4C4C4]">
+                                    <img src="./assets/images/icons/royal_talens.svg" alt="Royal Talents logo" class="w-[76.67%]" />
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex justify-center items-center w-full h-full border border-[#C4C4C4]">
+                                    <img src="./assets/images/icons/fabriano.svg" alt="Fabriano logo" class="w-[76.67%]" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="SketchBook">
+                <div class="wrapper py-60">
+                    <img src="./assets/images/sketchbook.png" alt="SketchBook" />
+                    <div class="flex flex-col gap-y-20 pb-30">
+                        <h2 class="section-header text-2xl/none text-[#666666] tracking-normal font-[Roboto]">Simple скетчбук</h2>
+                        <p class="text-base/[170%] text-[#85859B] tracking-normal font-[Roboto]"
+                            >80 листов, твердая обложка, бумага Fabriano 200 г/м2. Подойдет и для графики и для акварели. Для самых смелых творческих
+                            замыслов!</p
+                        >
+                    </div>
+                    <a
+                        class="block max-w-min px-38 py-14.5 border border-[#7875FE] text-[#7875FE] text-lg font-[Roboto] tracking-normal leading-none"
+                        href="#!"
+                    >
+                        Каталог
+                    </a>
+                </div>
+            </section>
         </div>
 
-        <footer id="Footer" class="bg-amber-100">
-            <div class="wrapper"> Footer </div>
+        <footer id="Footer">
+            <section id="Social" class="bg-[#4C5866]">
+                <div class="wrapper py-20 flex flex-col gap-y-20 items-center">
+                    <a href="#!" class="text-white"> <img class="inline" src="./assets/images/icons/logo.svg" alt="Logo icon" /> </a>
+                    <hr class="w-full h-1 text-[#DDDDDD] opacity-20" />
+                    <div class="flex gap-x-32">
+                        <a href="#!"><img src="./assets/images/icons/facebook.svg" alt="Facebook" /></a>
+                        <a href="#!"><img src="./assets/images/icons/twitter.svg" alt="Twitter" /></a>
+                        <a href="#!"><img src="./assets/images/icons/instagram.svg" alt="Instagram" /></a>
+                        <a href="#!"><img src="./assets/images/icons/youtube.svg" alt="YouTube" /></a>
+                    </div>
+                </div>
+            </section>
+            <section id="Copyright" class="bg-[#EBEBEB]">
+                <div class="wrapper py-3 flex justify-center">
+                    <a href="#!">
+                        <img src="./assets/images/icons/copyright.svg" alt="Copyright icon" />
+                    </a>
+                </div>
+            </section>
         </footer>
 
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+        <!-- Main JS --->
         <script src="./js/main.js"></script>
     </body>
 </html>
