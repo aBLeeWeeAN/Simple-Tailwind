@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import 'tailwindcss';
+/* @import '@splidejs/splide/css'; */
 
 @theme {
     --spacing: 1px;
@@ -16,3 +18,49 @@
         @apply mx-auto px-15 w-full tablet:px-33 tablet:max-w-768 laptop:px-39 laptop:max-w-1440 desktop:px-165;
     }
 }
+
+/* .swiper {
+    max-width: 100%;
+    width: 100%;
+    height: max-content;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    width: 150px;
+    height: 80px;
+} */
+
+/* .thumbnails {
+    display: flex;
+    margin: 1rem auto 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    list-style: none;
+    margin: 0 0.2rem;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.thumbnail.is-active {
+    opacity: 1;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+} */
