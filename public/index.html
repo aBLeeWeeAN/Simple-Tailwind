@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -6,24 +6,16 @@
 
         <title>Document</title>
 
-        <!-- Link Swiper's CSS -->
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" /> -->
-
-        <!-- <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script> -->
-
-        <!-- <link
-            href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-"
-            rel="stylesheet"
-        /> -->
-
         <!-- SplideJS --->
         <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
 
         <link rel="stylesheet" href="./css/main.css" />
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     </head>
 
     <body class="grid grid-rows-[auto_1fr_auto]">
@@ -40,54 +32,62 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </a>
             </section>
             <section id="Menu" class="wrapper border-y border-y-[#DDDDDD]">
-                <nav class="grid grid-cols-[1fr_auto_auto] gap-x-30 py-15 items-center tablet:block">
-                    <a href="#!" class="block tablet:hidden">
+                <nav class="flex gap-x-30 py-15 items-center tablet:block">
+                    <a href="#Mobile-Menu" class="block tablet:hidden">
                         <img src="./assets/images/icons/hamburger_menu.svg" alt="" />
                     </a>
-                    <ul class="hidden tablet:flex justify-between font-[Roboto] text-xl text-[#4C5866]">
+                    <ul class="hidden tablet:flex tablet:flex-row justify-between font-[Roboto] text-xl text-[#4C5866]">
                         <li><a href="#!">Продукция</a></li>
                         <li><a href="#!">Материалы</a></li>
                         <li><a href="#!">О нас</a></li>
                         <li><a href="#!">Контакты</a></li>
                     </ul>
-                    <!-- <div class="hamburger-menu">
-                        <div class="hamburger-menu__wrapper">
-                            <input type="checkbox" />
-                            <div class="hamburger-menu__button">
-                                <img src="./assets/images/icons/hamburger_menu.svg" alt="" />
-                            </div>
-                            <div class="hamburger-menu__slider">
-                                <div class="hamburger-menu__item">Thing 1</div>
-                                <div class="hamburger-menu__item">Thing 2</div>
-                                <div class="hamburger-menu__item">Thing 3</div>
-                                <div class="hamburger-menu__item">Thing 4</div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <a href="#!" class="block tablet:hidden">
+                    <a href="#!" class="ml-auto block tablet:hidden">
                         <img src="./assets/images/icons/search.svg" alt="" />
                     </a>
                     <a href="#!" class="block tablet:hidden">
                         <img src="./assets/images/icons/login.svg" alt="" />
                     </a>
+                    <div
+                        id="Mobile-Menu"
+                        class="fixed flex flex-col inset-0 -translate-x-full target:translate-x-0 z-10 will-change-transform transition-transform duration-300 ease-in-out tablet:hidden"
+                    >
+                        <div class="flex items-center justify-center py-10 bg-white">
+                            <a href="#!">
+                                <img src="./assets/images/icons/logo_dark.svg" alt="Logo dark icon" />
+                            </a>
+                        </div>
+                        <div class="w-full h-full flex flex-col p-15 gap-y-22 bg-[#ebebeb]">
+                            <a href="#!" class="block">
+                                <img src="./assets/images/icons/close.svg" alt="" />
+                            </a>
+                            <ul class="flex flex-col gap-y-50 justify-between font-[Roboto] text-xl text-[#4C5866]">
+                                <li><a href="#!">Продукция</a></li>
+                                <li><a href="#!">Материалы</a></li>
+                                <li><a href="#!">О нас</a></li>
+                                <li><a href="#!">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </section>
         </header>
 
         <div id="Page-Content">
             <section id="Hero" class="wrapper tablet:flex tablet:gap-x-30">
-                <div class="flex flex-col py-49 gap-y-21 tablet:py-60 justify-between">
-                    <div class="hero-main-text flex flex-col gap-y-15">
-                        <h1 class="text-[#4C5866] text-3xl/none tablet:text-[38px] tracking-normal font-[Roboto] max-w-220 tablet:max-w-290"
+                <div class="flex flex-col py-49 gap-y-21 tablet:py-60 laptop:py-65 justify-between">
+                    <div class="hero-main-text flex flex-col gap-y-15 tablet:gap-y-20 laptop:gap-y-30">
+                        <h1
+                            class="text-[#4C5866] text-3xl/none tracking-normal font-[Roboto] max-w-220 tablet:text-[38px] tablet:max-w-290 laptop:text-[50px] laptop:max-w-390"
                             >Простые вещи. Из бумаги</h1
                         >
-                        <p class="text-[#85859B] text-sm/[150%] tablet:text-base/[150%] tracking-normal font-[Roboto]">
+                        <p class="text-[#85859B] text-sm/[150%] tablet:text-base/[150%] tracking-normal font-[Roboto] laptop:text-lg">
                             Бума́га (предположительно от итал. bombagia, первоисточником же считается иранский) — волокнистый материал с минеральными добавками.
                         </p>
                     </div>
                     <a
-                        class="block max-w-min px-38 tablet:px-60 py-14.5 tablet:py-18.5 border border-[#7875FE] text-[#7875FE] text-lg tablet:text-xl font-[Roboto] tracking-normal leading-none"
                         href="#!"
+                        class="block max-w-min px-38 tablet:px-60 py-14.5 tablet:py-18.5 border border-[#7875FE] text-[#7875FE] text-lg tablet:text-xl font-[Roboto] tracking-normal leading-none laptop:py-23.5 laptop:px-89.5"
                     >
                         Каталог
                     </a>
@@ -97,43 +97,53 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     src="./assets/images/hero.png"
                     alt="Hero main image"
                 /> -->
-                <div class="hidden tablet:block min-w-195 max-h-416 overflow-hidden pt-20">
+                <div class="hidden tablet:block min-w-195 max-h-416 overflow-hidden pt-20 laptop:pt-60 laptop:min-w-270 laptop:max-h-470">
                     <img class="h-full w-full object-cover object-top" src="./assets/images/hero.png" alt="Hero main image" />
                 </div>
             </section>
             <section id="Study-Result" class="bg-[#ebebeb]">
-                <div class="wrapper py-60 flex flex-col justify-between items-stretch tablet:items-start">
-                    <div class="instruction w-full flex flex-col tablet:flex-row gap-y-20 tablet:gap-x-30 tablet:justify-between">
-                        <div class="w-full flex tablet:flex-col gap-x-30 tablet:gap-y-20 justify-center tablet:items-center border-t border-t-[#C0C0C0] pt-20">
+                <div
+                    class="wrapper py-60 flex flex-col justify-between items-stretch tablet:items-start laptop:grid laptop:grid-rows-[auto_1fr] laptop:grid-cols-[auto_1fr] laptop:grid-flow-dense laptop:gap-y-40 laptop:gap-x-30"
+                >
+                    <div
+                        class="instruction w-full flex flex-col tablet:flex-row gap-y-20 tablet:gap-x-30 tablet:justify-between laptop:col-span-2 font-[Roboto] text-base/[150%] tracking-normal laptop:text-lg/normal"
+                    >
+                        <div
+                            class="w-full flex tablet:flex-col gap-x-30 tablet:gap-y-20 justify-center tablet:items-center laptop:items-start border-t border-t-[#C0C0C0] pt-20"
+                        >
                             <img class="w-[max(40vw,130px)] tablet:w-[clamp(150px,26vw,160px)]" src="./assets/images/paper_v1.png" alt="Paper V1" />
                             <div class="flex flex-col items-start justify-center">
-                                <h3 class="font-[Roboto] text-[#666666] text-base/[150%] tracking-normal font-medium">V.1</h3>
-                                <p class="font-[Roboto] text-[#85859B] text-base/[150%] tracking-normal">Результат вашего обучения</p>
+                                <h3 class="text-[#666666] font-medium">V.1</h3>
+                                <p class="text-[#85859B]">Результат вашего обучения</p>
                             </div>
                         </div>
-                        <div class="w-full flex tablet:flex-col gap-x-30 tablet:gap-y-20 justify-center tablet:items-center border-t border-t-[#C0C0C0] pt-20">
+                        <div
+                            class="w-full flex tablet:flex-col gap-x-30 tablet:gap-y-20 justify-center tablet:items-center laptop:items-start border-t border-t-[#C0C0C0] pt-20"
+                        >
                             <img class="w-[max(40vw,130px)] tablet:w-[clamp(150px,26vw,160px)]" src="./assets/images/paper_v2.png" alt="Paper V2" />
                             <div class="flex flex-col items-start justify-center">
-                                <h3 class="font-[Roboto] text-[#666666] text-base/[150%] tracking-normal font-medium">V.2</h3>
-                                <p class="font-[Roboto] text-[#85859B] text-base/[150%] tracking-normal">Результат вашего обучения</p>
+                                <h3 class="text-[#666666]font-medium">V.2</h3>
+                                <p class=" text-[#85859B]">Результат вашего обучения</p>
                             </div>
                         </div>
-                        <div class="w-full flex tablet:flex-col gap-x-30 tablet:gap-y-20 justify-center tablet:items-center border-t border-t-[#C0C0C0] pt-20">
+                        <div
+                            class="w-full flex tablet:flex-col gap-x-30 tablet:gap-y-20 justify-center tablet:items-center laptop:items-start border-t border-t-[#C0C0C0] pt-20"
+                        >
                             <img class="w-[max(40vw,130px)] tablet:w-[clamp(150px,26vw,160px)]" src="./assets/images/paper_v3.png" alt="Paper V3" />
                             <div class="flex flex-col items-start justify-center">
-                                <h3 class="font-[Roboto] text-[#666666] text-base/[150%] tracking-normal font-medium">V.3</h3>
-                                <p class="font-[Roboto] text-[#85859B] text-base/[150%] tracking-normal">Результат вашего обучения</p>
+                                <h3 class="text-[#666666] font-medium">V.3</h3>
+                                <p class="text-[#85859B]">Результат вашего обучения</p>
                             </div>
                         </div>
                     </div>
-                    <img class="block pt-60 tablet:pt-40 pb-20 tablet:max-w-330" src="./assets/images/paper_big.png" alt="Paper Big" />
-                    <div class="content flex flex-col gap-y-14">
-                        <h2 class="section-header text-2xl/none text-[#666666] tracking-normal font-[Roboto]">Максимальная белизна</h2>
-                        <p class="text-base/[170%] text-[#85859B] tracking-normal font-[Roboto]">
+                    <img class="block pt-60 pb-20 tablet:pt-40 tablet:max-w-330 laptop:py-0" src="./assets/images/paper_big.png" alt="Paper Big" />
+                    <div class="content flex flex-col gap-y-14 laptop:gap-y-20">
+                        <h2 class="section-header text-2xl/none text-[#666666] tracking-normal font-[Roboto] laptop:text-3xl/none">Максимальная белизна</h2>
+                        <p class="text-base/[170%] text-[#85859B] tracking-normal font-[Roboto] laptop:text-lg/[170%]">
                             Для повышения белизны, гладкости и мягкости в состав бумажной массы вводят белые минеральные вещества: мел, тальк, каолин и др. Эта
                             операция называется наполнением.
                         </p>
-                        <p class="text-base/[170%] text-[#85859B] tracking-normal font-[Roboto]">
+                        <p class="text-base/[170%] text-[#85859B] tracking-normal font-[Roboto] laptop:text-lg/[170%]">
                             Отлив бумажного листа осуществляют на бумагоделательной машине, важнейшей частью которой является непрерывно движущаяся (как
                             транспортер) металлическая или капроновая сетка.
                         </p>
@@ -143,13 +153,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <section id="Advanced">
                 <div class="wrapper grid grid-cols-1 tablet:grid-cols-2 gap-y-60 tablet:max-laptop:gap-y-40 tablet:gap-x-30 desktop:grid-cols-4 py-60">
                     <div class="card grid grid-rows-[auto_1fr_auto]">
-                        <img class="w-full object-cover object-top aspect-290/180" src="./assets/images/sec3_img1.png" alt="Advanced section. Img #1" />
+                        <img
+                            class="w-full object-cover object-top aspect-290/180 tablet:aspect-240/180 laptop:aspect-330/180 desktop:aspect-255/180"
+                            src="./assets/images/sec3_img1.png"
+                            alt="Advanced section. Img #1"
+                        />
                         <div class="flex flex-col gap-y-8 pt-20 pb-30 tablet:pb-20">
-                            <div class="flex flex-col gap-y-4">
-                                <h3 class="text-[#666666] text-2xl tracking-normal font-[Roboto]">Упаковка</h3>
+                            <div class="flex flex-col gap-y-4 laptop:gap-y-8">
+                                <h3 class="text-[#666666] text-2xl tracking-normal font-[Roboto] laptop:text-3xl">Упаковка</h3>
                                 <h4 class="text-[#B5B5BD] text-sm tracking-normal font-[Roboto]">Тираж: от 50 штук</h4>
                             </div>
-                            <p class="text-[#85859B] text-base/[170%] tracking-normal font-[Roboto]">
+                            <p class="text-[#85859B] text-base/[170%] tracking-normal font-[Roboto] laptop:text-lg/[170%]">
                                 Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим форму под заказ.
                             </p>
                         </div>
@@ -159,13 +173,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </a>
                     </div>
                     <div class="card grid grid-rows-[auto_1fr_auto]">
-                        <img class="w-full object-cover object-top aspect-290/180" src="./assets/images/sec3_img2.png" alt="Advanced section. Img #2" />
+                        <img
+                            class="w-full object-cover object-top aspect-290/180 tablet:aspect-240/180 laptop:aspect-330/180 desktop:aspect-255/180"
+                            src="./assets/images/sec3_img2.png"
+                            alt="Advanced section. Img #2"
+                        />
                         <div class="flex flex-col gap-y-8 pt-20 pb-30 tablet:pb-20">
-                            <div class="flex flex-col gap-y-4">
-                                <h3 class="text-[#666666] text-2xl tracking-normal font-[Roboto]">Пакеты</h3>
+                            <div class="flex flex-col gap-y-4 laptop:gap-y-8">
+                                <h3 class="text-[#666666] text-2xl tracking-normal font-[Roboto] laptop:text-3xl">Пакеты</h3>
                                 <h4 class="text-[#B5B5BD] text-sm tracking-normal font-[Roboto]">Тираж: от 200 штук</h4>
                             </div>
-                            <p class="text-[#85859B] text-base/[170%] tracking-normal font-[Roboto]">
+                            <p class="text-[#85859B] text-base/[170%] tracking-normal font-[Roboto] laptop:text-lg/[170%]">
                                 С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные расцветки и дизайн.
                             </p>
                         </div>
@@ -175,13 +193,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </a>
                     </div>
                     <div class="card grid grid-rows-[auto_1fr_auto]">
-                        <img class="w-full object-cover object-top aspect-290/180" src="./assets/images/sec3_img3.png" alt="Advanced section. Img #3" />
+                        <img
+                            class="w-full object-cover object-top aspect-290/180 tablet:object-top-left tablet:aspect-240/180 laptop:aspect-330/180 desktop:aspect-255/180"
+                            src="./assets/images/sec3_img3.png"
+                            alt="Advanced section. Img #3"
+                        />
                         <div class="flex flex-col gap-y-8 pt-20 pb-30 tablet:pb-20">
-                            <div class="flex flex-col gap-y-4">
-                                <h3 class="text-[#666666] text-2xl tracking-normal font-[Roboto]">Кейсы</h3>
+                            <div class="flex flex-col gap-y-4 laptop:gap-y-8">
+                                <h3 class="text-[#666666] text-2xl tracking-normal font-[Roboto] laptop:text-3xl">Кейсы</h3>
                                 <h4 class="text-[#B5B5BD] text-sm tracking-normal font-[Roboto]">Тираж: от 30 штук</h4>
                             </div>
-                            <p class="text-[#85859B] text-base/[170%] tracking-normal font-[Roboto]">
+                            <p class="text-[#85859B] text-base/[170%] tracking-normal font-[Roboto] laptop:text-lg/[170%]">
                                 Подойдет для документов и других бумаг. Различные расцветки, размеры и плотность. Материал: прессованная бумага.
                             </p>
                         </div>
@@ -191,13 +213,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </a>
                     </div>
                     <div class="card grid grid-rows-[auto_1fr_auto]">
-                        <img class="w-full object-cover object-top aspect-290/180" src="./assets/images/sec3_img4.png" alt="Advanced section. Img #4" />
+                        <img
+                            class="w-full object-cover object-top aspect-290/180 tablet:aspect-240/180 laptop:aspect-330/180 desktop:aspect-255/180"
+                            src="./assets/images/sec3_img4.png"
+                            alt="Advanced section. Img #4"
+                        />
                         <div class="flex flex-col gap-y-8 pt-20 pb-30 tablet:pb-20">
-                            <div class="flex flex-col gap-y-4">
-                                <h3 class="text-[#666666] text-2xl tracking-normal font-[Roboto]">Другие изделия</h3>
+                            <div class="flex flex-col gap-y-4 laptop:gap-y-8">
+                                <h3 class="text-[#666666] text-2xl tracking-normal font-[Roboto] laptop:text-3xl">Другие изделия</h3>
                                 <h4 class="text-[#B5B5BD] text-sm tracking-normal font-[Roboto]">Тираж: от 100 штук</h4>
                             </div>
-                            <p class="text-[#85859B] text-base/[170%] tracking-normal font-[Roboto]">
+                            <p class="text-[#85859B] text-base/[170%] tracking-normal font-[Roboto] laptop:text-lg/[170%]">
                                 Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. Изготовим в кратчайшие сроки.
                             </p>
                         </div>
@@ -210,18 +236,36 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </section>
             <section id="Partners" class="bg-[#ebebeb]">
                 <div class="wrapper py-60">
-                    <div class="hidden tablet:grid tablet:grid-cols-2 tablet:gap-30">
-                        <a href="#!" class="flex justify-center items-center w-full min-h-127 border border-[#C4C4C4]">
-                            <img src="./assets/images/icons/hahnemuehle.svg" alt="Hahnemuehle logo" class="w-[76.67%] tablet:w-[min(100%,211px)]" />
+                    <div
+                        class="hidden tablet:grid tablet:grid-cols-[repeat(2,minmax(240px,1fr))] tablet:grid-rows-[repeat(2,127px)] tablet:gap-30 laptop:grid-cols-[repeat(4,minmax(150px,1fr))] laptop:grid-rows-[80px] desktop:grid-cols-[repeat(4,minmax(255px,1fr))] desktop:laptop:grid-rows-[135px]"
+                    >
+                        <a href="#!" class="flex justify-center items-center border border-[#C4C4C4]">
+                            <img
+                                src="./assets/images/icons/hahnemuehle.svg"
+                                alt="Hahnemuehle logo"
+                                class="w-[min(132px,76.67%)] tablet:max-laptop:w-[min(211px,76.67%)] desktop:w-[min(225px,76.67%)]"
+                            />
                         </a>
-                        <a href="#!" class="flex justify-center items-center w-full min-h-127 border border-[#C4C4C4]">
-                            <img src="./assets/images/icons/canson.svg" alt="Canson logo" class="w-[76.67%] tablet:w-[min(100%,211px)]" />
+                        <a href="#!" class="flex justify-center items-center border border-[#C4C4C4]">
+                            <img
+                                src="./assets/images/icons/canson.svg"
+                                alt="Canson logo"
+                                class="w-[min(132px,76.67%)] tablet:max-laptop:w-[min(211px,76.67%)] desktop:w-[min(225px,76.67%)]"
+                            />
                         </a>
-                        <a href="#!" class="flex justify-center items-center w-full min-h-127 border border-[#C4C4C4]">
-                            <img src="./assets/images/icons/royal_talens.svg" alt="Royal Talents logo" class="w-[76.67%] tablet:w-[min(100%,211px)]" />
+                        <a href="#!" class="flex justify-center items-center border border-[#C4C4C4]">
+                            <img
+                                src="./assets/images/icons/royal_talens.svg"
+                                alt="Royal Talents logo"
+                                class="w-[min(132px,76.67%)] tablet:max-laptop:w-[min(211px,76.67%)] desktop:w-[min(225px,76.67%)]"
+                            />
                         </a>
-                        <a href="#!" class="flex justify-center items-center w-full min-h-127 border border-[#C4C4C4]">
-                            <img src="./assets/images/icons/fabriano.svg" alt="Fabriano logo" class="w-[76.67%] tablet:w-[min(100%,211px)]" />
+                        <a href="#!" class="flex justify-center items-center border border-[#C4C4C4]">
+                            <img
+                                src="./assets/images/icons/fabriano.svg"
+                                alt="Fabriano logo"
+                                class="w-[min(132px,76.67%)] tablet:max-laptop:w-[min(211px,76.67%)] desktop:w-[min(225px,76.67%)]"
+                            />
                         </a>
                     </div>
 
@@ -321,20 +365,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
             </section>
             <section id="SketchBook">
-                <div class="wrapper flex flex-col items-start py-60">
-                    <img class="self-center w-[min(100%,450px)]" src="./assets/images/sketchbook.png" alt="SketchBook" />
-                    <div class="flex flex-col gap-y-20 pb-30 tablet:pt-10">
-                        <h2 class="section-header text-2xl/none text-[#666666] tracking-normal font-[Roboto]">Simple скетчбук</h2>
-                        <p class="text-base/[170%] text-[#85859B] tracking-normal font-[Roboto]"
+                <div
+                    class="wrapper flex flex-col items-start py-60 laptop:grid laptop:grid-cols-[1fr_auto] laptop:grid-rows-[1fr_auto] laptop:gap-30 laptop:items-stretch laptop:pr-0"
+                >
+                    <div class="overflow-hidden laptop:min-h-* laptop:max-w-450 laptop:pl-80 laptop:row-span-2">
+                        <img class="w-full" src="./assets/images/sketchbook.png" alt="SketchBook" />
+                    </div>
+                    <div class="flex flex-col gap-y-20 pb-30 tablet:pt-10 laptop:py-0 laptop:col-1 laptop:row-1">
+                        <h2 class="section-header text-2xl/none text-[#666666] tracking-normal font-[Roboto] laptop:text-3xl/none">Simple скетчбук</h2>
+                        <p class="text-base/[170%] text-[#85859B] tracking-normal font-[Roboto] laptop:text-lg/[170%]"
                             >80 листов, твердая обложка, бумага Fabriano 200 г/м2. Подойдет и для графики и для акварели. Для самых смелых творческих
                             замыслов!</p
                         >
                     </div>
                     <a
-                        class="block max-w-min px-38 tablet:px-60 py-14.5 tablet:py-18.5 border border-[#7875FE] text-[#7875FE] text-lg tablet:text-xl font-[Roboto] tracking-normal leading-none"
                         href="#!"
+                        class="block max-w-min px-38 tablet:px-60 py-14.5 tablet:py-18.5 border border-[#7875FE] text-[#7875FE] text-lg tablet:text-xl font-[Roboto] tracking-normal leading-none laptop:py-23.5 laptop:px-89.5 laptop:col-1 laptop:row-2"
                     >
-                        Каталог
+                        Купить
                     </a>
                 </div>
             </section>
