@@ -10,12 +10,13 @@
     "requirePragma": false,
     "insertPragma": false,
     "checkIgnorePragma": false,
-    "htmlWhitespaceSensitivity": "strict",
+    "htmlWhitespaceSensitivity": "ignore",
     "quoteProps": "consistent",
     "singleQuote": true,
-    "trailingComma": "none",
-    "singleAttributePerLine": false,
+    "trailingComma": "all",
+    "singleAttributePerLine": true,
     "embeddedLanguageFormatting": "off",
+    "proseWrap": "never",
     "overrides":
         [
             { "files": ["**/*.html"], "options": { "printWidth": 160 } },
