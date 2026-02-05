@@ -1001,6 +1001,11 @@
       font-size: 50px;
     }
   }
+  .desktop\:flex {
+    @media (width >= 1440px) {
+      display: flex;
+    }
+  }
   .desktop\:aspect-255\/180 {
     @media (width >= 1440px) {
       aspect-ratio: 255/180;
@@ -1026,6 +1031,11 @@
       max-width: calc(var(--spacing) * 450);
     }
   }
+  .desktop\:max-w-730 {
+    @media (width >= 1440px) {
+      max-width: calc(var(--spacing) * 730);
+    }
+  }
   .desktop\:min-w-540 {
     @media (width >= 1440px) {
       min-width: calc(var(--spacing) * 540);
@@ -1041,9 +1051,24 @@
       grid-template-columns: repeat(4,minmax(255px,1fr));
     }
   }
+  .desktop\:flex-row {
+    @media (width >= 1440px) {
+      flex-direction: row;
+    }
+  }
+  .desktop\:items-center {
+    @media (width >= 1440px) {
+      align-items: center;
+    }
+  }
   .desktop\:justify-center {
     @media (width >= 1440px) {
       justify-content: center;
+    }
+  }
+  .desktop\:gap-y-90 {
+    @media (width >= 1440px) {
+      row-gap: calc(var(--spacing) * 90);
     }
   }
   .desktop\:py-90 {
@@ -1051,9 +1076,42 @@
       padding-block: calc(var(--spacing) * 90);
     }
   }
+  .desktop\:text-\[40px\]\/none {
+    @media (width >= 1440px) {
+      font-size: 40px;
+      line-height: 1;
+    }
+  }
+  .desktop\:text-\[40px\] {
+    @media (width >= 1440px) {
+      font-size: 40px;
+    }
+  }
   .desktop\:text-\[60px\] {
     @media (width >= 1440px) {
       font-size: 60px;
+    }
+  }
+  .desktop\:leading-\[100\%\] {
+    @media (width >= 1440px) {
+      --tw-leading: 100%;
+      line-height: 100%;
+    }
+  }
+  .desktop\:leading-normal {
+    @media (width >= 1440px) {
+      --tw-leading: var(--leading-normal);
+      line-height: var(--leading-normal);
+    }
+  }
+  .desktop\:text-\[40px\/100\%\] {
+    @media (width >= 1440px) {
+      color: 40px/100%;
+    }
+  }
+  .desktop\:text-\[40px\/150\%\] {
+    @media (width >= 1440px) {
+      color: 40px/150%;
     }
   }
   .desktop\:laptop\:grid-rows-\[135px\] {
