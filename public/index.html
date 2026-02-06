@@ -37,7 +37,7 @@
         <header id="Header">
             <section
                 id="Logo"
-                class="wrapper flex items-center justify-center py-10 tablet:grid tablet:grid-cols-[1fr_auto_auto] tablet:gap-x-30"
+                class="wrapper flex items-center justify-center py-10 tablet:grid tablet:grid-cols-[1fr_auto] desktop:grid-cols-[1fr_auto_auto] desktop:gap-x-60 desktop:py-28"
             >
                 <a href="#!">
                     <img
@@ -45,30 +45,38 @@
                         alt="Logo dark icon"
                     />
                 </a>
-                <a
-                    href="#!"
-                    class="hidden tablet:block"
-                >
-                    <img
-                        src="./assets/images/icons/search.svg"
-                        alt=""
-                    />
-                </a>
-                <a
-                    href="#!"
-                    class="hidden tablet:block"
-                >
-                    <img
-                        src="./assets/images/icons/login.svg"
-                        alt=""
-                    />
-                </a>
+                <ul class="hidden desktop:flex desktop:flex-row desktop:gap-x-60 desktop:items-center justify-between font-[Roboto] text-xl text-[#4C5866]">
+                    <li><a href="#!">Продукция</a></li>
+                    <li><a href="#!">Материалы</a></li>
+                    <li><a href="#!">О нас</a></li>
+                    <li><a href="#!">Контакты</a></li>
+                </ul>
+                <div class="flex flex-row gap-x-30">
+                    <a
+                        href="#!"
+                        class="hidden tablet:block"
+                    >
+                        <img
+                            src="./assets/images/icons/search.svg"
+                            alt=""
+                        />
+                    </a>
+                    <a
+                        href="#!"
+                        class="hidden tablet:block"
+                    >
+                        <img
+                            src="./assets/images/icons/login.svg"
+                            alt=""
+                        />
+                    </a>
+                </div>
             </section>
             <section
                 id="Menu"
-                class="wrapper border-y border-y-[#DDDDDD]"
+                class="wrapper border-y border-y-[#DDDDDD] desktop:max-w-full"
             >
-                <nav class="flex gap-x-30 py-15 items-center tablet:block">
+                <nav class="flex gap-x-30 py-15 items-center tablet:block desktop:hidden">
                     <a
                         href="#Mobile-Menu"
                         class="block tablet:hidden"

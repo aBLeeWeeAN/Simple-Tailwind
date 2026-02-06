@@ -318,6 +318,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-row {
+    flex-direction: row;
+  }
   .items-center {
     align-items: center;
   }
@@ -665,6 +668,11 @@
   .tablet\:grid-cols-2 {
     @media (width >= 576px) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .tablet\:grid-cols-\[1fr_auto\] {
+    @media (width >= 576px) {
+      grid-template-columns: 1fr auto;
     }
   }
   .tablet\:grid-cols-\[1fr_auto_auto\] {
@@ -1018,6 +1026,21 @@
       font-size: 50px;
     }
   }
+  .desktop\:mx-0 {
+    @media (width >= 1440px) {
+      margin-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .desktop\:flex {
+    @media (width >= 1440px) {
+      display: flex;
+    }
+  }
+  .desktop\:hidden {
+    @media (width >= 1440px) {
+      display: none;
+    }
+  }
   .desktop\:aspect-255\/180 {
     @media (width >= 1440px) {
       aspect-ratio: 255/180;
@@ -1048,6 +1071,11 @@
       max-width: calc(var(--spacing) * 730);
     }
   }
+  .desktop\:max-w-full {
+    @media (width >= 1440px) {
+      max-width: 100%;
+    }
+  }
   .desktop\:min-w-540 {
     @media (width >= 1440px) {
       min-width: calc(var(--spacing) * 540);
@@ -1061,6 +1089,16 @@
   .desktop\:grid-cols-4 {
     @media (width >= 1440px) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .desktop\:grid-cols-\[1fr_auto_auto\] {
+    @media (width >= 1440px) {
+      grid-template-columns: 1fr auto auto;
+    }
+  }
+  .desktop\:grid-cols-\[1fr_auto_auto_auto\] {
+    @media (width >= 1440px) {
+      grid-template-columns: 1fr auto auto auto;
     }
   }
   .desktop\:grid-cols-\[repeat\(4\,minmax\(255px\,1fr\)\)\] {
@@ -1083,9 +1121,24 @@
       justify-content: center;
     }
   }
+  .desktop\:gap-x-60 {
+    @media (width >= 1440px) {
+      column-gap: calc(var(--spacing) * 60);
+    }
+  }
   .desktop\:gap-y-90 {
     @media (width >= 1440px) {
       row-gap: calc(var(--spacing) * 90);
+    }
+  }
+  .desktop\:px-0 {
+    @media (width >= 1440px) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .desktop\:py-28 {
+    @media (width >= 1440px) {
+      padding-block: calc(var(--spacing) * 28);
     }
   }
   .desktop\:py-90 {
